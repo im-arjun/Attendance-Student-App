@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Attendance Student App</string>
+    <string name="signIn">Sign In</string>
+    <string name="letsGetStarted">Let\'s Get Started</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="sentOtp">Sent OTP</string>
+    <string name="enterMobileNo">Enter Mobile Number</string>
+    <string name="verifyMobileNumber">Verify your mobile</string>
+    <string name="enterYourOtp">Enter your OTP code here</string>
+    <string name="OTPNotReceived">Didn\'t receive an OTP ?</string>
+    <string name="resendOTP">Resent OTP</string>
+    <string name="verifyOTP">Verify OTP</string>
 </resources>
