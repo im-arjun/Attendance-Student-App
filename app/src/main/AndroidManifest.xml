@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AttendanceStudentApp">
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".OTPVerificationActivity" />
         <activity android:name=".LoginActivity" />
         <activity android:name=".SplashScreen">

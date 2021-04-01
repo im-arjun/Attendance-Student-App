@@ -10,4 +10,7 @@
     <string name="OTPNotReceived">Didn\'t receive an OTP ?</string>
     <string name="resendOTP">Resent OTP</string>
     <string name="verifyOTP">Verify OTP</string>
+    <string name="home">Home</string>
+    <string name="message">Message</string>
+    <string name="profile">Profile</string>
 </resources>
