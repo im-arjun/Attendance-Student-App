@@ -15,4 +15,5 @@
     <string name="profile">Profile</string>
     <string name="attendance_view">Attendance View</string>
     <string name="apply">Apply</string>
+    <string name="select_one">Select One</string>
 </resources>
