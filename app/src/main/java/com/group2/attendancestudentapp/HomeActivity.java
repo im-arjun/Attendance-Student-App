@@ -10,6 +10,8 @@ import android.widget.AutoCompleteTextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Objects;
+
 public class HomeActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
@@ -19,7 +21,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         // Bottom Navigation SetUp
         bottomNavigationView = findViewById(R.id.bottomNavigation);
