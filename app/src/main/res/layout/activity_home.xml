@@ -6,111 +6,41 @@
     android:layout_height="wrap_content"
     tools:context=".HomeActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/selectionInputLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="10dp"
-        android:hint="@string/attendance_view"
-        android:orientation="horizontal"
-        app:boxStrokeColor="@color/black"
-        app:hintTextColor="@color/black">
-
-        <AutoCompleteTextView
-            android:id="@+id/attendanceViewText"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/selectionInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
-            tools:ignore="LabelFor" />
+            android:hint="@string/attendance_view"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="10dp"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            android:orientation="horizontal">
 
-    </com.google.android.material.textfield.TextInputLayout>
+            <AutoCompleteTextView
+                android:id="@+id/attendanceViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                tools:ignore="LabelFor" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/hourDaySelectionLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:layout_width="match_parent"
-        android:layout_below="@+id/selectionInputLayout"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginVertical="10dp"
-        android:hint="@string/select_one"
-        android:orientation="horizontal"
-        app:boxStrokeColor="@color/black"
-        app:hintTextColor="@color/black">
-
-        <AutoCompleteTextView
-            android:id="@+id/hourDayViewText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="none"
-            tools:ignore="LabelFor" />
-
-    </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/applyBtn"
+        android:id="@+id/containedButton"
         style="@style/Widget.MaterialComponents.Button"
         android:layout_width="150sp"
         android:layout_height="50sp"
-        android:layout_below="@+id/hourDaySelectionLayout"
+        android:layout_below="@+id/selectionInputLayout"
         android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
         android:text="@string/apply"
+        app:backgroundTint="@color/secondary"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@color/ivory"
         android:textSize="18sp"
-        app:backgroundTint="@color/secondary" />
-
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/paymentDetails"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:theme="@style/Theme.MaterialComponents.Light"
-        app:cardBackgroundColor="@color/ivory"
-        android:layout_below="@+id/applyBtn"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:paddingHorizontal="20dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:fontFamily="@font/regular"
-                    android:text="Account Details"
-                    android:textColor="@color/black"
-                    android:textSize="18sp" />
-
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="0dp"
-                    android:layout_weight="1" />
-
-                <ImageView
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/icon_calendar"
-                    app:tint="@color/black"
-                    tools:ignore="ContentDescription" />
-            </LinearLayout>
-
-            <!--<View style="@style/Divider" />-->
-        </RelativeLayout>
-    </com.google.android.material.card.MaterialCardView>
+        android:gravity="center_horizontal" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigation"
