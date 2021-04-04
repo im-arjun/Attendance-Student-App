@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.Objects;
+import java.util.logging.LoggingMXBean;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -56,6 +58,9 @@ public class HomeActivity extends AppCompatActivity {
         /*BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.home);
         badgeDrawable.isVisible();
         badgeDrawable.setNumber(5);*/
+
+        //just checking to push code
+        Log.v("main","just checking");
 
     }
 }
