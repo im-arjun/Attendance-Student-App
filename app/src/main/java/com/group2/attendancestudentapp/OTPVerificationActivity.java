@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.Objects;
+
 public class OTPVerificationActivity extends AppCompatActivity {
 
     Button verifyOTPBtn;
@@ -14,14 +16,9 @@ public class OTPVerificationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_o_t_p_verification);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         verifyOTPBtn = findViewById(R.id.verifyOTPBtn);
-        verifyOTPBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
-            }
-        });
+        verifyOTPBtn.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), HomeActivity.class)));
     }
 }

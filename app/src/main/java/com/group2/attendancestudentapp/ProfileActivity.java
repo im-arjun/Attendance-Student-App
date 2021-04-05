@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Objects;
+
 public class ProfileActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
@@ -16,7 +18,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        getSupportActionBar().hide();
+        Objects.requireNonNull(getSupportActionBar()).hide();
 
         // Bottom Navigation SetUp
         bottomNavigationView = findViewById(R.id.bottomNavigation);
